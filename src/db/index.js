@@ -11,5 +11,5 @@ const connectDatabase=async()=>{
     }
     
 }
-export {DB_NAME};
+export {connectDatabase};
 
