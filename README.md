@@ -15,7 +15,7 @@
         - usermodel
         - video model
 
-        - user model
+      - user model
         - add schema
         - add bcrypt 
         - add password encryption
@@ -25,8 +25,8 @@
         - access token 
         - refresh token 
     
-    - video model 
-     - define videoSchema 
-     - add mongoose aggrigate pagination library 
+      - video model 
+      - define videoSchema 
+      - add mongoose aggrigate pagination library 
 
 
