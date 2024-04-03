@@ -46,4 +46,23 @@ const userSchema=new mongoose.Schema({
 },{timestamps:true});
 
 
+//  bcrypt password
+
+userSchema.pre("save",async function(next){
+    if(this.isModified("password")){
+        this.password=await bcrypt.hash(this.password,10);
+        next();
+    }
+})
+
+// compare password
+userSchema.methods.isPasswordChecked=async function(password){
+    return await bcrypt.compare(password,this.password);
+}
+
+//  add jwt tokens acess token 
+
+
+
+
 export const user=mongoose.model("user",userSchema);
