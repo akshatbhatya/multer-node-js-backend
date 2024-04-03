@@ -25,6 +25,15 @@ const VideoSchema=new mongoose.Schema({
     isPublished:{
         type:Boolean,
         default:true
+    },
+    thumbnail:{
+        type:String,
+        required:true
+
+    },
+    videoFile:{
+        type:String,
+        required:true
     }
 },{timestamps:true});
 
